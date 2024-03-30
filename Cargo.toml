@@ -2,7 +2,15 @@
 name = "i2pd-sys"
 version = "0.1.0"
 edition = "2021"
+links = "i2pd"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["lib", "staticlib" ]
+
+[build-dependencies]
+cxx-build = "1.0"
+pkg-config = "0.3.30"
 
 [dependencies]
+cxx = "1.0"
